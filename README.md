@@ -104,13 +104,6 @@ make
 make rebuild
 ```
 
-### Compiler Options
-
-The Makefile uses the following flags:
-- `-std=c++17` - C++17 standard
-- `-Wall -Wextra` - All warnings enabled
-- `-g` - Debug symbols included
-
 ---
 
 ## Examples
