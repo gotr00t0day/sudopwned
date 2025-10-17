@@ -24,34 +24,7 @@ A lightweight command-line tool to detect vulnerable sudo versions on Unix syste
 ## Supported Vulnerabilities
 
 ### CVE-2021-3156 - Baron Samedit (Heap-Based Buffer Overflow)
-
-**Severity:** Critical (CVSS 7.8)  
-**Affected Versions:**
-- sudo 1.8.2 through 1.8.31p2
-- sudo 1.9.0 through 1.9.5p1
-
-**Description:** A heap-based buffer overflow in sudo allows local privilege escalation to root without requiring authentication.
-
-**Impact:** Any unprivileged user can gain root access.
-
-**References:**
-- [CVE-2021-3156](https://nvd.nist.gov/vuln/detail/CVE-2021-3156)
-- [Qualys Advisory](https://blog.qualys.com/vulnerabilities-threat-research/2021/01/26/cve-2021-3156-heap-based-buffer-overflow-in-sudo-baron-samedit)
-
----
-
 ### CVE-2025-32463 - Chroot Bypass
-
-**Severity:** High (CVSS 7.3)  
-**Affected Versions:**
-- sudo 1.9.14 through 1.9.17
-
-**Description:** A vulnerability in sudo's chroot handling allows attackers to bypass chroot restrictions.
-
-**Impact:** Privilege escalation and container escape scenarios.
-
-**References:**
-- [CVE-2025-32463](https://nvd.nist.gov/vuln/detail/CVE-2025-32463)
 
 ---
 
