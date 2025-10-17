@@ -18,12 +18,12 @@ A lightweight command-line tool to detect vulnerable sudo versions on Unix syste
 
 ## Features
 
-- 🔍 **Automatic sudo version detection**
-- 🛡️ **CVE-2021-3156** (Baron Samedit) detection
-- 🛡️ **CVE-2025-32463** (chroot bypass) detection
-- 🎨 **Color-coded output** for easy readability
-- ⚡ **Fast and lightweight** - written in C++
-- 🔧 **Simple CLI** interface
+- **Automatic sudo version detection**
+- **CVE-2021-3156** (Baron Samedit) detection
+- **CVE-2025-32463** (chroot bypass) detection
+- **Color-coded output** for easy readability
+- **Fast and lightweight** - written in C++
+- **Simple CLI** interface
 
 ---
 
@@ -122,15 +122,6 @@ Shows usage information.
 
 ---
 
-## How It Works
-
-1. **Version Detection:** Executes `sudo --version` and parses the output
-2. **Version Comparison:** Compares detected version against known vulnerable versions
-3. **Vulnerability Matching:** Uses hardcoded CVE version lists to determine exposure
-4. **Result Display:** Shows color-coded results for each CVE
-
----
-
 ## Building and Development
 
 ### Clean Build
@@ -195,19 +186,6 @@ NOT vulnerable to CVE-2025-32463
 [*] Scanning for CVE-2021-3156 (Baron Samedit)...
 NOT vulnerable to CVE-2021-3156
 ```
-
----
-
-## Future Enhancements
-
-Potential features for future versions:
-
-- [ ] JSON output for automation
-- [ ] Support for additional sudo CVEs
-- [ ] Exploit suggestions (for authorized testing)
-- [ ] Log file generation
-- [ ] Integration with security scanning frameworks
-- [ ] Cross-platform support (BSD, macOS)
 
 ---
 
