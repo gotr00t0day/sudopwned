@@ -23,8 +23,8 @@ A lightweight command-line tool to detect vulnerable sudo versions on Unix syste
 
 ## Supported Vulnerabilities
 
-### CVE-2021-3156 - Baron Samedit (Heap-Based Buffer Overflow)
-### CVE-2025-32463 - Chroot Bypass
+- **CVE-2021-3156 - Baron Samedit (Heap-Based Buffer Overflow)**
+- **CVE-2025-32463 - Chroot Bypass**
 
 ---
 
