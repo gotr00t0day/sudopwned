@@ -16,12 +16,10 @@ void runCommand(const std::vector<const char*>& args) {
     }
 
     if (pid == 0) {
-        // Child process
         execvp(args[0], (char* const*)args.data());
         perror("execvp");
         _exit(1);
     } else {
-        // Parent process waits
         int status;
         if (waitpid(pid, &status, 0) == -1) {
             perror("waitpid");
