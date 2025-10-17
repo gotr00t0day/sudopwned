@@ -1,8 +1,5 @@
 # sudoPWNED - Sudo Vulnerability Scanner
 
-**Author:** c0d3Ninja  
-**Version:** 1.0
-
 A lightweight command-line tool to detect vulnerable sudo versions on Unix systems.
 
 ```
