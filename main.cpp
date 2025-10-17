@@ -57,7 +57,6 @@ int main(int argc, char* argv[]) {
         std::cout << "Sudo Version: " << CYAN << ver << RESET << std::endl;
         std::cout << std::endl;
         
-        // Check CVE-2025-32463
         std::cout << "[*] Scanning for CVE-2025-32463 (chroot bypass)..." << RESET << std::endl;
         if (pwnchroot()) {
             std::cout << RED << "[!] VULNERABLE to CVE-2025-32463" << RESET << std::endl;
@@ -67,7 +66,6 @@ int main(int argc, char* argv[]) {
         
         std::cout << std::endl;
         
-        // Check CVE-2021-3156 (Baron Samedit)
         std::cout << "[*] Scanning for CVE-2021-3156 (Baron Samedit)..." << RESET << std::endl;
         if (pwnbarotsamedit()) {
             std::cout << RED << "[!] VULNERABLE to CVE-2021-3156" << RESET << std::endl;
